@@ -1,0 +1,178 @@
+@import "./variables";
+
+section.projects {
+    min-height: 100vh;
+    height: auto;
+
+    h3 {
+        font-size: $section-title;
+        text-transform: uppercase;
+        padding-top: 2rem;
+        text-align: center;
+        cursor: default;
+
+        span {
+            border-bottom: 5px solid rgb(33, 168, 185);
+            padding-bottom: 0.8rem;
+        }
+    }
+
+    .content {
+        width: 100%;
+
+        .row {
+            display: flex;
+
+            .project {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0rem 1rem;
+                flex: 1 1 0px;
+
+                .project-header {
+                    font-size: 1.6rem;
+                    padding: 0.8rem 0rem;
+                }
+                .project-body {
+                    figure {
+                        img {
+                            max-width: 100%;
+                            display: block;
+                            height: 50vh;
+                            margin: auto;
+                            box-shadow: 2px 2px 4px black;
+                            transition: all 500ms;
+                            z-index: 0;
+                            padding: 1rem;
+                            border-radius: 5px;
+
+                            &:hover {
+                                box-shadow: 5px 5px 7px black;
+                                padding: 0rem;
+                            }
+                        }
+                        figcaption {
+                            font-size: 1.2rem;
+                            padding: 1.5rem;
+                            text-align: justify;
+                        }
+                    }
+                }
+                .project-footer {
+                    $demo-color: rgb(112, 38, 94);
+                    $code-color: rgb(12, 70, 97);
+
+                    display: inline-block;
+                    padding: 0.1rem;
+
+                    a {
+                        padding: 0.5rem 1rem;
+                        font-size: 1rem;
+                        border-radius: 3px;
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+
+                    .demo {
+                        border: 2px solid $demo-color;
+                        background-color: transparent;
+                        color: $demo-color;
+                        transition: all 250ms;
+
+                        &:hover {
+                            border: 2px solid $demo-color;
+                            background-color: $demo-color;
+                            color: white;
+                        }
+                    }
+
+                    .code {
+                        border: 2px solid $code-color;
+                        background-color: transparent;
+                        color: $code-color;
+
+                        &:hover {
+                            border: 2px solid $code-color;
+                            background-color: $code-color;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    section.projects {
+        .content {
+            padding: 2rem $margin-left-right;
+        }
+    }
+}
+
+@media (min-width: 801px) and (max-width: 899px) {
+    section.projects {
+        .content {
+            padding: 2rem 4rem;
+
+            .row {
+                .project {
+                    .project-body {
+                        figure {
+                            img {
+                                max-height: 35vh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    section.projects {
+        .content {
+            padding: 1rem 4rem;
+
+            .row {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .project {
+                    width: 100%;
+                    margin: 1.2rem 0;
+
+                    .project-body {
+                        figure {
+                            img {
+                                width: 100%;
+                                height: 50vh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 451px) and (max-width: 719px) {
+    section.projects {
+        .content {
+            padding: 1rem 4rem;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    section.projects {
+        .content {
+            padding: 1rem 1rem;
+        }
+    }
+}

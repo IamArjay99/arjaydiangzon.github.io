@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Arjay Diangzon</title>
+        <!-- Website Icon -->
+        <link rel="shortcut icon" type="image/x-icon" href="./dist/img/icon.png" />
+
+        <!-- Font awesome -->
+        <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+        />
+
+        <!-- Header fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abel&family=Nanum+Gothic&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+
+        <!-- Aanimation on scroll (AOS) -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+        <!-- Swal.fire -->
+        <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css" rel="stylesheet">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+
+        <!-- Custom style -->
+        <link rel="stylesheet" href="./dist/css/styles.min.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="./dist/img/logo.png" alt="">
+                <span>RJ</span>
+            </div>
+            <div class="navbar">
+                <i class="fa fa-bars" aria-hidden="true" id="menu"></i>
+                <i
+                    class="fa fa-times"
+                    aria-hidden="true"
+                    id="menu-close"
+                ></i>
+                <ul id="categories">
+                    <li><a href="#home" class="nav-link home">Home</a></li>
+                    <li><a href="#about" class="nav-link about">About</a></li>
+                    <li>
+                        <a href="#projects" class="nav-link projects">Projects</a>
+                    </li>
+                    <li><a href="#contact" class="nav-link contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="home" id="home">
+            <div class="text">
+                <div data-aos="zoom-out">
+                    <span class="welcome">I BUILD</span><br />
+                    <span>AMAZING<br /></span>
+                    <span class="portfolio">EXPERIENCES</span><br>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about" >
+            <h3 data-aos="flip-left">A<span>bou</span>t</h3>
+            <div class="content">
+                <div class="about-img">
+                    <img data-aos="fade-up" src="./dist/img/profile.jpg" alt="Profile picture" />
+                </div>
+                <div class="about-text">
+                    <div class="intro" data-aos="zoom-out-up">
+                        <span class="text-hello"></span> Hello, </span><br />
+                        <span class="text-author">
+                            I am <span class="name">Arjay Diangzon</span>, a
+                            self-taught and an aspiring web developer.
+                        </span><br />
+                        <span class="text-other">
+                            I love learning new technologies especially when it comes to web development.
+                        </span>
+                    </div>
+                </div>
+                <div class="about-button">
+                    <a href="#projects" data-aos="fade-in" class="about nav-link">See my projects &nbsp&nbsp<i class="fa fa-arrow-down" aria-hidden="true" id="about-icon"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h3 data-aos="flip-left">P<span>roject</span>s</h3>
+            <div class="content">
+                <div class="row">
+                    <section class="project">
+                        <div class="project-header" data-aos="zoom-in-up">
+                            <p>QF Searching App</p>
+                        </div>
+                        <div class="project-body">
+                            <figure>
+                                <img
+                                    src="./dist/img/qf-searching-app.png"
+                                    alt="QF Searching App"
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                />
+                                <figcaption data-aos="fade-down">
+                                    Quarantine Facilty Seaching App allows you to search for the specific city in Metro Manila, Philippines and find out what are the current status of that city and allows you to request quarantine if you think you are already infected with the Corona Virus Disease 2019. 
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="project-footer">
+                            <a href="http://qf-searching-app.000webhostapp.com/" target="_blank" class="demo" data-aos="zoom-in-up">Live Demo</a>
+                            <a href="https://github.com/IamArjay99/QF-Searching-App" target="_blank" class="code" data-aos="zoom-in-down">Source Code</a>
+                        </div>
+                    </section>
+                    <section class="project">
+                        <div class="project-header" data-aos="zoom-in-up">
+                            <p>Smart Attendance</p>
+                        </div>
+                        <div class="project-body">
+                            <figure>
+                                <img
+                                    src="./dist/img/smart-attendance.png"
+                                    alt="Project 1"
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                />
+                                <figcaption data-aos="fade-down">
+                                    Smart Attendance is a web application for viewing information regarding the class schedules, attendance record and downloading of attendance records.
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="project-footer">
+                            <a href="http://jru-smart-attendance.000webhostapp.com/" target="_blank" class="demo" data-aos="zoom-in-up">Live Demo</a>
+                            <a href="https://github.com/IamArjay99/Smart-Attendance" target="_blank" class="code" data-aos="zoom-in-down">Source Code</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h3 data-aos="flip-right">C<span>ontac</span>t</h3>
+            <div class="content">
+                <div class="form" data-aos="fade-up">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label><br>
+                            <input type="text" name="name" id="name" class="form-control">
+                            <div class="error error-name"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id="email" class="form-control">
+                            <div class="error error-email"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label><br>
+                            <textarea name="message" id="message" class="form-control" rows="5"></textarea>
+                            <div class="error error-message"></div>
+                        </div>
+                        <div class="form-group btn-group">
+                            <button class="clear" type="reset" id="btn-clear">CLEAR</button>
+                            <button class="submit" type="submit" id="btn-submit">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="accounts">
+                    <div class="facebook icon">
+                        <a href="https://www.facebook.com/IamArjay99" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="linkedin icon">
+                        <a href="https://www.linkedin.com/in/iamarjay99" target="_blank">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="github icon">
+                        <a href="https://github.com/IamArjay99" target="_blank">
+                            <i class="fa fa-github-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="google icon">
+                        <a href="mailto:arjaydiangzon@gmail.com" target="_blank">
+                            <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- JQUERY -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Offset scroll -->
+        <script src="./dist/js/offset.js"></script>
+
+        <!-- Intersecting observer -->
+        <script src="./dist/js/observer.js"></script>
+
+        <!-- For navbar links  -->
+        <script src="./dist/js/navbar.js"></script>
+
+        <!-- Animation on Scroll -->
+        <script src="./dist/js/scrollanim.js"></script>
+
+        <!-- Submit Contact Form -->
+        <script src="./dist/js/contactform.js"></script>
+    </body>
+</html>

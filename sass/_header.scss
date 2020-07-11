@@ -1,0 +1,77 @@
+@import "./variables";
+
+section.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./../img/header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Abel", sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+
+    .text {
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        div {
+            padding: 50px;
+            color: $nav-text-color;
+            font-weight: bolder;
+            text-shadow: 5px 5px 5px rgb(8, 0, 0);
+            text-align: right;
+        }
+
+        .welcome {
+            color: rgb(179, 199, 5);
+            text-shadow: 5px 5px 5px rgb(24, 21, 21);
+        }
+
+        .portfolio {
+            color: rgb(176, 222, 240);
+            text-shadow: 5px 5px 5px rgb(1, 9, 15);
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    section.home {
+        .text {
+            margin: 0 $margin-left-right;
+            line-height: 4.5rem;
+
+            div {
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 400px) and (max-width: 799px) {
+    section.home {
+        .text {
+            line-height: 4.5rem;
+
+            div {
+                font-size: 4rem;
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media (max-width: 399px) {
+    section.home {
+        .text {
+            line-height: 3rem;
+
+            div {
+                font-size: 3rem;
+                text-align: right;
+            }
+        }
+    }
+}

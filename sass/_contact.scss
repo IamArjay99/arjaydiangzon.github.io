@@ -1,0 +1,240 @@
+@import "./variables";
+
+section.contact {
+    // min-height: 100vh;
+    height: auto;
+    background-color: #f7f7f7;
+    position: relative;
+
+    h3 {
+        font-size: $section-title;
+        text-transform: uppercase;
+        padding-top: 2rem;
+        text-align: center;
+        cursor: default;
+
+        span {
+            border-bottom: 5px solid rgb(33, 168, 185);
+            padding-bottom: 0.8rem;
+        }
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        // position: relative;
+
+        .form {
+            padding-top: 2rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+
+            .form-group {
+                width: 100%;
+
+                label {
+                    margin: 2rem 0rem;
+                    font-size: 1.2rem;
+                }
+
+                .form-control {
+                    width: 40vw;
+                }
+
+                input {
+                    height: 2.3rem;
+                    font-size: 1.2rem;
+                    padding: 0.5rem;
+                    margin: 0.3rem 0rem;
+                    border: 1px solid rgba(50, 51, 50, 0.39);
+                    font-family: "Abel", sans-serif;
+
+                    &:focus {
+                        outline: none;
+                        border: 1px solid rgba(14, 191, 223, 0.925);
+                    }
+                }
+
+                textarea {
+                    resize: none;
+                    font-size: 1.2rem;
+                    padding: 0.5rem;
+                    margin: 0.5rem 0rem;
+                    border: 1px solid rgba(50, 51, 50, 0.39);
+                    font-family: "Abel", sans-serif;
+
+                    &:focus {
+                        outline: none;
+                        border: 1px solid rgba(14, 191, 223, 0.925);
+                    }
+                }
+
+                .error-feedback {
+                    margin-bottom: 1rem;
+                    color: red;
+                    font-size: 0.8rem;
+                }
+
+                button {
+                    padding: 0.5rem 1rem;
+                    font-size: 0.9rem;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+            }
+
+            .btn-group {
+                $submit-color: #309b9a;
+                $clear-color: #c23051;
+
+                text-align: right;
+                margin-top: 1rem;
+
+                .submit {
+                    border: 2px solid $submit-color;
+                    background-color: $submit-color;
+                    color: white;
+                    transition: all 250ms;
+
+                    &:hover {
+                        border: 2px solid $submit-color;
+                        background-color: transparent;
+                        color: $submit-color;
+                    }
+
+                    &:visited {
+                        border: 2px solid $submit-color;
+                    }
+
+                    &:active {
+                        border: 2px solid $submit-color;
+                    }
+                }
+
+                .clear {
+                    border: 2px solid $clear-color;
+                    background-color: $clear-color;
+                    color: whitesmoke;
+
+                    &:hover {
+                        border: 2px solid $clear-color;
+                        background-color: transparent;
+                        color: $clear-color;
+                    }
+
+                    &:visited {
+                        border: 2px solid $clear-color;
+                    }
+
+                    &:active {
+                        border: 2px solid $clear-color;
+                    }
+                }
+            }
+        }
+
+        .accounts {
+            // border: 1px solid black;
+            // padding: 1rem 5rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            font-size: 2.5rem;
+            // margin: 0 auto;
+            background-color: rgba(128, 128, 128, 0.123);
+            position: relative;
+            left: 0;
+            bottom: 0;
+            border-top: 0.5px solid rgba(0, 0, 0, 0.11);
+            margin-top: 3rem;
+
+            .icon {
+                padding: 0.4em 0.2em;
+            }
+
+            .facebook {
+                a {
+                    text-decoration: none;
+                    i {
+                        color: #4267b2;
+                    }
+                }
+            }
+
+            .linkedin {
+                a {
+                    text-decoration: none;
+                    i {
+                        color: #0076b3;
+                    }
+                }
+            }
+
+            .github {
+                a {
+                    text-decoration: none;
+                    i {
+                        color: #303030;
+                    }
+                }
+            }
+
+            .google {
+                a {
+                    text-decoration: none;
+                    i {
+                        color: #d55044;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 721px) and (max-width: 900px) {
+    section.contact {
+        .content {
+            .form {
+                .form-group {
+                    .form-control {
+                        width: 70vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 365px) and (max-width: 720px) {
+    section.contact {
+        .content {
+            .form {
+                .form-group {
+                    .form-control {
+                        width: 70vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 364px) {
+    section.contact {
+        .content {
+            .form {
+                .form-group {
+                    .form-control {
+                        width: 90vw;
+                    }
+                }
+            }
+        }
+    }
+}
